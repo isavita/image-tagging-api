@@ -1,0 +1,36 @@
+{
+  "name": "image-tagging-api",
+  "version": "0.0.1",
+  "description": "This is API client library for tagging images",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isavita/image-tagging-api.git"
+  },
+  "keywords": [
+    "ai",
+    "auto",
+    "tagging",
+    "image"
+  ],
+  "author": "Aleksandar Dimov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/isavita/image-tagging-api/issues"
+  },
+  "homepage": "https://github.com/isavita/image-tagging-api#readme",
+  "dependencies": {
+    "body-parser": "^1.16.1",
+    "convnetjs": "^0.3.0",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.14.1",
+    "lodash": "^4.17.4",
+    "machine_learning": "^0.1.1",
+    "mongoose": "^4.8.4",
+    "multer": "^1.3.0"
+  }
+}

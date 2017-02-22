@@ -1,3 +1,3 @@
 // index.js
 
-console.log('I am a Nodejs developer');
+require('./app/file_reader')
