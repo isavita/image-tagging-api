@@ -17,12 +17,12 @@ else:
 image_data = tf.gfile.FastGFile(image_path, 'rb').read()
 
 # Read label file, strips off carriage return
-label_lines = [line.rtrip() for line in tf.gfile.GFile("/tf_files/retrained_labels.txt")]
+label_lines = [line.rstrip() for line in tf.gfile.GFile("/tf_files/retrained_labels.txt")]
 
 # Unpresists graph from file
 with tf.gfile.FastGFile("/tf_files/retrained_graph.pb", 'rb') as f:
   graph_def = tf.GraphDef()
-  graph_def.ParseFromSting(f.read())
+  graph_def.ParseFromString(f.read())
   _ = tf.import_graph_def(graph_def, name='')
 
 with tf.Session() as sess:

@@ -13,6 +13,7 @@ Jamal's Dolls
   ```bash
   cd /tensorflow
   ```
+
   ```bash
   python tensorflow/examples/image_retraining/retrain.py \
   --bottleneck_dir=/tf_files/bottlenecks \
@@ -20,5 +21,12 @@ Jamal's Dolls
   --model_dir=/tf_files/inception \
   --output_graph=/tf_files/retrained_graph.pb \
   --output_labels=/tf_files/retrained_labels.txt \
-  --image_dir /tf_files/
+  --image_dir /tf_files/images/
   ```
+
+  ```bash
+  pip install requests
+  ```
+  ```bash
+  ```
+python /tf_files/main.py https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcS1U2qNqjRtHmke6b57fSgwzEG1lqA3no1q1NR_QzdebPoQrgr1pg24Q-s
