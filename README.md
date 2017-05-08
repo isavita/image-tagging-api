@@ -6,7 +6,7 @@ Jamal's Dolls
 
 2. Link all of the categories folders from images folder
   ```bash
-  docker run -it -v $HOME/git/image_auto_tagging/tf_files:/tf_files/  gcr.io/tensorflow/tensorflow:latest-devel
+  docker run -it -v $HOME/git/image-tagging-api/tf_files:/tf_files/  gcr.io/tensorflow/tensorflow:latest-devel
   ```
 
 3. Run inside docker for training the model
